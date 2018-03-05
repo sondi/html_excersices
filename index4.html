@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <style>
+      body{
+        background-color: #f3f3f3;
+        font-family: 'Montserrat', sans-serif;
+      }
+      form{
+        width: 400px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 40px;
+      }
+      p{
+        padding: 10px;
+      }
+      form p{
+        width: 91%;
+      }
+      input{
+        width: 100%;
+        height: 20px;
+        padding: 10px;
+      }
+      textarea{
+        width: 100%;
+      }
+      label{
+        color:#4d4d4d;
+        clear: both;
+      }
+      .button-container{
+        text-align: center;
+      }
+      button{
+        height: 35px;
+        border-radius: 0;
+        width: 90px;
+        background-color:lightcoral;
+        color: white;
+      }
+      .auto{
+        width: auto;
+      }
+      .color-input{
+        width: 35px;
+      }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <h2>Formularios</h2>
+        <p>
+          <label>Radio Button</label><br>
+          <label>
+            <input class="auto" type="radio" name="title" value="Mr."> Mr.</input>
+          </label>
+          <label>
+            <input class="auto" type="radio" name="title" value="Mrs."> Mrs.</input>
+          </label>
+          <label>
+            <input class="auto" type="radio" name="title" value="Miss.">Miss</input>
+          </label>
+        </p>
+        <p>
+          <label>Upload file Input</label><br>
+          <input type="file" name="archivo" />
+        </p>
+        <p>
+          <label>Range Input</label><br>
+          <label>
+            <input type="range" >
+          </label>
+        </p>
+        <p>
+          <label>Text Input</label><br>
+          <label>
+            <input type="text" name="nombre" value="" placeholder="¿Cual es tu nombre?">
+          </label>
+        </p>
+        <p>
+          <label>Email Input</label><br>
+          <label>
+            <input type="email" name="email" value="" placeholder="¿Cual es tu correo electrónico?" >
+          </label>
+        </p>
+        <p>
+          <label>Tel Input</label><br>
+          <label>
+            <input type="tel" name="telefono" placeholder="¿Cual es tu Telefono?">
+          </label>
+        </p>
+        <p>
+          <label>Celphone Input</label><br>
+          <label>
+            <input type="number" name="celular" placeholder="¿Cual es tu numero celular?">
+          </label>
+        </p>
+        <p>
+          <label>Date Input</label><br>
+          <label>
+            <input type="date" name="fecha">
+          </label>
+        </p>
+        <p>
+          <label>Color Input</label><br>
+          <label>
+              <input class="color-input" type="color" value="#f3f3f3">
+          </label>
+        </p>
+        <p>
+          <label>Search Input</label><br>
+          <label>
+              <input type="search" value="">
+          </label>
+        </p>
+        <p>
+          <label>Password Input</label><br>
+          <label>
+            <input type="password" name="password" placeholder="Asigna una contraseña">
+          </label>
+        </p>
+        <p>
+          <label>Dropdown Input</label><br>
+          <label>
+            <select name="ciudad">
+              <option value="gdl">Guadalajara</option>
+              <option value="cdmx">Ciudad de México</option>
+              <option value="mty">Monterrey</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>Text area Input</label><br>
+          <label>
+            <textarea name="mensaje" cols="30" rows="10"></textarea>
+          </label>
+        </p>
+        <p>
+          <label>Checkbox Input</label><br>
+          <label>
+            <input type="checkbox">¿Aceptas los terminos?</input>
+          </label>
+        </p>
+        <div class="button-container">
+          <button type="reset">Reset Button</button>
+          <button>Submit</button>
+        </div>
+      </form>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .container-row{
+            display: flex;
+            flex-direction: row;
+        }
+        .container-row-reverse{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .container-column{
+            display: flex;
+            flex-direction: column;
+        }
+        .container-wrap{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container-justify{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .elemento{
+            width: 25%;
+            padding: 5px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .container .elemento{
+            width: 25%;
+            background-color: rgb(243, 255, 80);
+        }
+        .container .elemento:first-child, .container .elemento:nth-child(3), .container .elemento:nth-child(5){
+            background-color: rgb(92, 247, 213);
+        }
+    </style>
+</head>
+<body>
+    <h3>Flex Direction: Row</h3>
+    <div class="container-row">
+        <div class="elemento" style="background-color:coral">One</div>
+        <div class="elemento" style="background-color:rgba(255, 152, 114, 0.726)">Two</div>
+        <div class="elemento" style="background-color:rgb(243, 255, 80)">Three</div>
+        <div class="elemento" style="background-color:rgb(110, 240, 35)">Four</div>
+        <div class="elemento" style="background-color:rgb(92, 247, 213)">Five</div>
+        <div class="elemento" style="background-color:rgb(52, 186, 248)">Six</div>
+        <div class="elemento" style="background-color:rgb(80, 121, 255)">Seven</div>
+    </div>
+    <h3>Flex Direction: Row Reversed</h3>
+    <div class="container-row-reverse">
+        <div class="elemento" style="background-color:coral">One</div>
+        <div class="elemento" style="background-color:rgba(255, 152, 114, 0.726)">Two</div>
+        <div class="elemento" style="background-color:rgb(243, 255, 80)">Three</div>
+        <div class="elemento" style="background-color:rgb(110, 240, 35)">Four</div>
+        <div class="elemento" style="background-color:rgb(92, 247, 213)">Five</div>
+        <div class="elemento" style="background-color:rgb(52, 186, 248)">Six</div>
+        <div class="elemento" style="background-color:rgb(80, 121, 255)">Seven</div>
+    </div>
+    <h3>Flex Direction: Colum</h3>
+    <div class="container-column">
+        <div class="elemento" style="background-color:coral">One</div>
+        <div class="elemento" style="background-color:rgba(255, 152, 114, 0.726)">Two</div>
+        <div class="elemento" style="background-color:rgb(243, 255, 80)">Three</div>
+        <div class="elemento" style="background-color:rgb(110, 240, 35)">Four</div>
+        <div class="elemento" style="background-color:rgb(92, 247, 213)">Five</div>
+        <div class="elemento" style="background-color:rgb(52, 186, 248)">Six</div>
+        <div class="elemento" style="background-color:rgb(80, 121, 255)">Seven</div>
+    </div>
+    <h3>Flex Wrap: Wrap</h3>
+    <div class="container-wrap">
+        <div class="elemento" style="background-color:coral">One</div>
+        <div class="elemento" style="background-color:rgba(255, 152, 114, 0.726)">Two</div>
+        <div class="elemento" style="background-color:rgb(243, 255, 80)">Three</div>
+        <div class="elemento" style="background-color:rgb(110, 240, 35)">Four</div>
+        <div class="elemento" style="background-color:rgb(92, 247, 213)">Five</div>
+        <div class="elemento" style="background-color:rgb(52, 186, 248)">Six</div>
+        <div class="elemento" style="background-color:rgb(80, 121, 255)">Seven</div>
+    </div>
+    <h3>Flex Justify Content</h3>
+    <div class="container-justify">
+        <div class="elemento" style="background-color:coral">One</div>
+        <div class="elemento" style="background-color:rgba(255, 152, 114, 0.726)">Two</div>
+        <div class="elemento" style="background-color:rgb(243, 255, 80)">Three</div>
+        <div class="elemento" style="background-color:rgb(110, 240, 35)">Four</div>
+        <div class="elemento" style="background-color:rgb(92, 247, 213)">Five</div>
+        <div class="elemento" style="background-color:rgb(52, 186, 248)">Six</div>
+        <div class="elemento" style="background-color:rgb(80, 121, 255)">Seven</div>
+    </div>
+
+    <section>
+        <h3>Ejercicio</h3>
+        <div class="container">
+            <div class="elemento">One</div>
+            <div class="elemento">Two</div>
+            <div class="elemento">Three</div>
+            <div class="elemento">Four</div>
+            <div class="elemento">Five</div>
+            <div class="elemento">Six</div>
+            <div class="elemento">Seven</div>
+        </div>
+    </section>
+</body>
+</html>
